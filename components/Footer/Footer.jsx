@@ -4,7 +4,7 @@ import {BiRightArrow} from 'react-icons/bi'
 
 const Footer = () => {
   return (
-    <div className='bg-black w-screen p-10 md:flex md:justify-between md:flex-wrap '>
+    <div className='bg-black w-screen p-10 md:flex md:justify-between md:flex-wrap'>
 
       <div className='mb-6 md:mb-0'>
         <h1 className='text-white mb-2 tracking-wide text-lg'>Artisian Connect .</h1>

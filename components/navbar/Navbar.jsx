@@ -7,9 +7,9 @@ import { ImCross } from "react-icons/im";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   return (
-    <>
-      <div className="w-screen z-10 bg-slate-300">
-      <div className="flex justify-between items-center bg-white p-3 pl-6 shadow-custom fixed top-0 left-0 w-screen ">
+    <siv className='z-50'>
+      <div className="w-screen z-50 bg-slate-300 ">
+      <div className="flex justify-between items-center bg-white p-3 pl-6 shadow-custom fixed top-0 right-0 left-0 w-screen ">
 
         <div className="">
           <Link href="/">
@@ -54,9 +54,9 @@ const Navbar = () => {
         )}
       </div>
     </div>
-    <div>
+    <div className="z-10">
       {nav ?
-          <div className="md:hidden fixed  w-[10rem] bg-slate-300  h-screen top-[3.3rem] left-0 p-3 shadow-responsive">
+          <div className="md:hidden fixed z-10  w-[10rem] bg-slate-300  h-screen top-[3.3rem] right-0 left-0 p-3 shadow-responsive">
             <Link href='/'>
               <p className="font-semibold mb-6">Home</p>
             </Link>
@@ -81,7 +81,7 @@ const Navbar = () => {
           <></>}
 
     </div>
-  </>
+  </siv>
 
   );
 };

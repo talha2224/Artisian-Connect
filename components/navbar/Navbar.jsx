@@ -22,7 +22,7 @@ const Navbar = () => {
             <p className="sm:text-base sm:font-semibold">Home</p>
           </Link>
 
-          <Link href="/" className="mr-4">
+          <Link href="/about" className="mr-4">
             <p className="sm:text-base sm:font-semibold">About</p>
           </Link>
 
@@ -61,7 +61,7 @@ const Navbar = () => {
               <p className="font-semibold mb-6">Home</p>
             </Link>
 
-            <Link href='/'>
+            <Link href='/about'>
               <p className="mb-6 font-semibold">About</p>
             </Link>
 

@@ -1,18 +1,13 @@
-import About from '@/components/About/About'
 import Footer from '@/components/Footer/Footer'
+import Location from '@/components/Location/Location'
 import Navbar from '@/components/navbar/Navbar'
 import React from 'react'
 
-
-export const metadata = {
-    title: 'Artisian Connect-About-Page',
-    description: 'Artisian Connect About Page',
-}
 const page = () => {
   return (
     <div>
       <Navbar/>
-      <About/>
+      <Location/>
       <Footer/>
     </div>
   )

@@ -1,5 +1,4 @@
-import Form from '@/components/form/Form'
-import Navbar from '@/components/navbar/Navbar'
+import RegisterPage from '@/pages/Seller/Register/RegisterPage'
 import React from 'react'
 
 export const metadata = {
@@ -10,8 +9,7 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-      <Navbar/>
-      <Form heading='Seller Register' isLogin={false} span='Login' link='/seller/login' buttonText='Register' alreadytext='Already have an account'/>
+      <RegisterPage/>
     </div>
   )
 }

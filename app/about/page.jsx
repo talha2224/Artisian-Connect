@@ -1,6 +1,4 @@
-import About from '@/components/About/About'
-import Footer from '@/components/Footer/Footer'
-import Navbar from '@/components/navbar/Navbar'
+import AboutPage from '@/pages/About/AboutPage'
 import React from 'react'
 
 
@@ -11,9 +9,7 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-      <Navbar/>
-      <About/>
-      <Footer/>
+      <AboutPage/>
     </div>
   )
 }

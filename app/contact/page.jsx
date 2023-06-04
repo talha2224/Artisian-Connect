@@ -1,6 +1,4 @@
-import Contact from '@/components/Contact/Contact'
-import Footer from '@/components/Footer/Footer'
-import Navbar from '@/components/navbar/Navbar'
+import ContactPage from '@/pages/Contact/ContactPage'
 import React from 'react'
 
 export const metadata = {
@@ -10,9 +8,7 @@ export const metadata = {
 const page = () => {
   return (
     <div className="">
-      <Navbar/>
-      <Contact/>
-      <Footer/>
+      <ContactPage/>
     </div>
   )
 }

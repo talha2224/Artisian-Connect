@@ -25,7 +25,7 @@ const Form = ({heading,isLogin,buttonText,alreadytext,link,span}) => {
   return (
 
     <div>
-      <div className={`flex w-screen  fixed top-[8rem] -z-50 justify-center items-center flex-col ${isLogin ? 'top-[11.5rem] md:top-[10.6rem]' : null}`}>
+      <div className={`flex w-screen  fixed top-[8rem] -z-50 justify-center items-center flex-col ${isLogin ? 'h-[65vh]' : null}`}>
         <div className='shadow-custom p-4 h-max rounded-md'>
 
           <div>

@@ -1,6 +1,5 @@
 import React from 'react'
-import Form from '@/components/form/Form'
-import Navbar from '@/components/navbar/Navbar'
+import RegisterPage from '@/pages/Buyer/Register/RegisterPage'
 
 
 export const metadata = {
@@ -11,8 +10,7 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-      <Navbar/>
-      <Form heading='Buyer Register' isLogin={false} span='Login' link='/buyer/login' buttonText='Register' alreadytext='Already have an account'/>
+      <RegisterPage/>
     </div>
   )
 }

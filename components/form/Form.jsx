@@ -9,19 +9,6 @@ const Form = ({heading,isLogin,buttonText,alreadytext,link,span}) => {
 
   const [showpassword,setshowpassword] = useState(false)
   const [msg,setMsg] = useState('')
-  const [error, seterror] = useState(false)
-  const [showPopup, setshowPopup] = useState(false)
-
-  const submitForm = ()=>{
-    setMsg('All fields are required')
-    seterror(!error)
-    setshowPopup(true)
-    setTimeout(()=>{
-      setshowPopup (false)
-      seterror(false)
-      setMsg('')
-    },4000)
-  }
   return (
 
     <div>
@@ -59,7 +46,7 @@ const Form = ({heading,isLogin,buttonText,alreadytext,link,span}) => {
           </div>
 
           <div className='mt-4 text-center'>
-            <button className='bg-blue-500 text-white p-2 w-44 h-10 rounded-md' onClick={submitForm}>{buttonText}</button>
+            <button className='bg-blue-500 text-white p-2 w-44 h-10 rounded-md'>{buttonText}</button>
           </div>
 
           <div className='mt-4'>
@@ -71,9 +58,6 @@ const Form = ({heading,isLogin,buttonText,alreadytext,link,span}) => {
           </div>
         </div>
       </div>
-      {
-        showPopup ?<PopUp message={msg} msgStyle={error ?'text-white' : 'text-white'} containerStyle={error?'bg-red-500' :'bg-blue-400'}/> :<></>
-      }
     </div>
   )
 }
